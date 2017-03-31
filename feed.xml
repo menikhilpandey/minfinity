@@ -1,20 +1,58 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>minfinity</title>
+    <description></description>
+    <link>http://blog.nikhilpandey.me</link>
+    <atom:link href="http://blog.nikhilpandey.me/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Text Classification and Sentiment Analysis : Support Vector Machines</title>
+        <description>Discussion of SVM Classifier in context of Natural Language Processing and Sentiment Analysis</description>
+        <pubDate>Sun, 19 Mar 2017 00:00:00 +0530</pubDate>
+        <link>http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-support-vector-machines</link>
+        <guid isPermaLink="true">http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-support-vector-machines</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Text Classification and Sentiment Analysis : Maximum Entropy</title>
+        <description>Discussion of theory behind popular Maximum Entropy Classifier in context of Natural Language Processing</description>
+        <pubDate>Sun, 19 Feb 2017 00:00:00 +0530</pubDate>
+        <link>http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-maximum-entropy</link>
+        <guid isPermaLink="true">http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-maximum-entropy</guid>
+      </item>
+    
+      <item>
+        <title>Text Classification and Sentiment Analysis : Naive Bayes</title>
+        <description>Discussion of theory behind Naive Bayes Classifier in context of Seniment Analysis</description>
+        <pubDate>Sun, 05 Feb 2017 00:00:00 +0530</pubDate>
+        <link>http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-naive-bayes</link>
+        <guid isPermaLink="true">http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-naive-bayes</guid>
+      </item>
+    
+      <item>
+        <title>Text Classification and Sentiment Analysis : Basic Concepts</title>
+        <description>Some basic concepts in NLP include Tokenization, Word Normalization, Bag of Words Model, Classifier Evaluation...</description>
+        <pubDate>Sun, 29 Jan 2017 00:00:00 +0530</pubDate>
+        <link>http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-basic-concepts</link>
+        <guid isPermaLink="true">http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-basic-concepts</guid>
+      </item>
+    
+      <item>
+        <title>Text Classification and Sentiment Analysis : Introduction</title>
+        <description>Natural Language Processing (NLP) is a vast area of Computer Science that is concerned with the interaction between Computers and Human Language...</description>
+        <pubDate>Sun, 22 Jan 2017 00:00:00 +0530</pubDate>
+        <link>http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-introduction</link>
+        <guid isPermaLink="true">http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-introduction</guid>
+      </item>
+    
+      <item>
+        <title>Ingredients in the making of a Data Scientist</title>
+        <description>What exactly is data science? How does one prepare for a career in data science? Well, Data Scientist is the hottest profession in the 21st century...</description>
+        <pubDate>Sun, 11 Dec 2016 00:00:00 +0530</pubDate>
+        <link>http://blog.nikhilpandey.me/posts/ingredients-in-the-making-of-a-data-scientist</link>
+        <guid isPermaLink="true">http://blog.nikhilpandey.me/posts/ingredients-in-the-making-of-a-data-scientist</guid>
+      </item>
+    
   </channel>
 </rss>

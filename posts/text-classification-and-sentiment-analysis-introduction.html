@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>minfinity | Text Classification and Sentiment Analysis : Introduction</title>
+  <meta name="description" content="Natural Language Processing (NLP) is a vast area of Computer Science that is concerned with the interaction between Computers and Human Language...">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Text Classification and Sentiment Analysis : Introduction">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-introduction">
+  <meta property="og:description" content="Natural Language Processing (NLP) is a vast area of Computer Science that is concerned with the interaction between Computers and Human Language...">
+  <meta property="og:site_name" content="minfinity">
+  <meta property="og:image" content="http://blog.nikhilpandey.me/assets/post-images/nlp-word-cloud.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-introduction">
+  <meta name="twitter:title" content="Text Classification and Sentiment Analysis : Introduction">
+  <meta name="twitter:description" content="Natural Language Processing (NLP) is a vast area of Computer Science that is concerned with the interaction between Computers and Human Language...">
+  <meta name="twitter:image" content="http://blog.nikhilpandey.me/assets/post-images/nlp-word-cloud.jpg">
+
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link href="http://blog.nikhilpandey.me/feed.xml" type="application/rss+xml" rel="alternate" title="minfinity Last 10 blog posts" />
+
+  
+    <link type="text/css" rel="stylesheet" href="/assets/light.css">
+  
+</head>
+
+<body>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/" class="header-logo" title="minfinity">minfinity</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="https://twitter.com/menikhilpandey" target="_blank" title="Twitter">
+          <span class="icon icon-social-twitter"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://www.facebook.com/menikhilpandey" target="_blank" title="Facebook">
+          <span class="icon icon-social-facebook"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/menikhilpandey" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://www.linkedin.com/in/menikhilpandey" target="_blank" title="LinkedIn">
+          <span class="icon icon-social-linkedin"></span>
+        </a>
+      </li>
+    
+    
+    
+      <li>
+        <a href="mailto:contact@nikhilpandey.me" target="_blank" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>Text Classification and Sentiment Analysis : Introduction</h1>
+            <p>Natural Language Processing (NLP) is a vast area of Computer Science that is concerned with the interaction between Computers and Human Language...</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                January 22, 2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  2 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/machine-learning">machine-learning</a>
+                
+                  <a href="/tag/sentiment-analytics">sentiment-analytics</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <p>Within NLP many tasks are – or can be reformulated as – classification tasks. In classification tasks we are trying to produce a classification function which can give the correlation between a certain ‘feature’ <strong>D</strong> and a class <strong>C</strong>. This Classifier first has to be trained with a training dataset, and then it can be used to actually classify documents. Training means that we have to determine  its model parameters. If the set of training examples is chosen correctly, the Classifier should predict the class probabilities of the actual documents with a similar accuracy (as the training examples).</p>
+
+<p>After construction, such a Classifier could for example tell us that document containing the words “Bose-Einstein condensate” should be categorized as a Physics article, while documents containing the words “Arbitrage” and “Hedging” should be categorized as a Finance article.
+Another Classifier could tell us that mails starting with “Dear Customer/Guest/Sir” (instead of your name) and containing words like “Great opportunity” or “one-time offer” can be classified as spam.
+Here we can already see two uses of classification models: topic classification and spam filtering. For these purposes a Classifiers work quiet well and perform better than most trained professionals.</p>
+
+<p>A third usage of Classifiers is Sentiment Analysis. Here the purpose is to determine the subjective value of a text-document, i.e. how positive or negative is the content of a text document. Unfortunately, for this purpose these Classifiers fail to achieve the same accuracy. This is due to the subtleties of human language; sarcasm, irony, context interpretation, use of slang, cultural differences and the different ways in which opinion can be expressed (subjective vs comparative, explicit vs implicit).</p>
+
+<p>In this blog series I will discuss the theory behind three popular Classifiers (Naive Bayes, Maximum Entropy and Support Vector Machines) in the context of Sentiment Analysis.</p>
+
+<p>The contents of this blog series is as follows:</p>
+
+<ol>
+  <li>Basic concepts of text classification:
+    <ul>
+      <li>Tokenization</li>
+      <li>Word normalization</li>
+      <li>bag-of-words model</li>
+      <li>Classifier evaluation</li>
+    </ul>
+  </li>
+  <li>Naieve Bayesian Classifier</li>
+  <li>Maximum Entropy Classifier</li>
+  <li>Support Vector Machines</li>
+</ol>
+
+          </div>
+
+          <div class="article-share">
+            
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status=Text Classification and Sentiment Analysis : In... - http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-introduction by @menikhilpandey', 'newwindow', 'width=500, height=225'); return false;">
+              <span class="icon icon-social-twitter"></span>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-introduction', 'newwindow', 'width=500, height=500'); return false;">
+              <span class="icon icon-social-facebook"></span>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=http://blog.nikhilpandey.me/posts/text-classification-and-sentiment-analysis-introduction', 'newwindow', 'width=550, height=400'); return false;">
+              <span class="icon icon-social-googleplus"></span>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer reveal">
+  <p>
+    Powered by Jekyll.<br>
+    © 2016 | <a href="http://nikhilpandey.me">Nikhil Pandey</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="/assets/vendor.js"></script>
+<script type="text/javascript" src="/assets/application.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+    }
+  });
+</script>
+
+
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-88810479-1','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+</body>
+</html>
